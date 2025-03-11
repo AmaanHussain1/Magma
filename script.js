@@ -645,7 +645,7 @@ gsap.to(".page7-cir",{
     scroller: "#main",
     scrub: 0.5
   },
-  scale: 1.5
+  scale: 2
 })
 
 
@@ -657,5 +657,16 @@ gsap.to(".page7-cir-inner",{
     scroller: "#main",
     scrub: 0.5
   },
-  backgroundColor: '#0a3cce',
+  backgroundColor: 'rgba(60, 95, 192, 0.579)',
+})
+
+gsap.to(".page7-cir-inner h1",{
+  scrollTrigger:{
+    trigger: ".page7-cir-inner h1",
+    start: 'top center',
+    end: 'bottom top',
+    scroller: "#main",
+    scrub: 0.5
+  },
+  scale: 1
 })
